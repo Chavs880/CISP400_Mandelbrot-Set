@@ -4,8 +4,8 @@ using namespace sf;
 
 int main()
 {
-    RenderWindow window(VideoMode(VideoMode::getDesktopMode().width/2, VideoMode::getDesktopMode().height/2), "Mandelbrot");
-    ComplexPlane cPlane(VideoMode::getDesktopMode().width/2, VideoMode::getDesktopMode().height/2);
+    RenderWindow window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height), "Mandelbrot");
+    ComplexPlane cPlane(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height);
     Font font;
     font.loadFromFile("Arial.ttf");
     Text text;
